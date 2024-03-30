@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Frontend Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the documentation for the frontend of the project. Below are the instructions for setting up and running the frontend application.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+1. Clone this repository to your local machine:
 
-### `npm start`
+   ```bash
+   git clone https://github.com/Vishal7547/WitArist-frontend
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Navigate to the project directory
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+     cd client
 
-### `npm test`
+## Install dependencies using npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     npm i
 
-### `npm run build`
+## backend Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/Vishal7547/WitArtist-backend
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Navigate to the project directory
 
-### `npm run eject`
+     cd server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Install dependencies using npm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     npm i
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## backend env file
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+PORT=5000
+MONGO_URL=mongo url
 
-## Learn More
+## API Documentation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Get All Todos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **URL:** `/todo`
+- **Method:** `GET`
+- **Description:** Get all todos
+- **Controller:** `todoController`
 
-### Code Splitting
+### Get Single Todo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **URL:** `/singletodo/:id`
+- **Method:** `GET`
+- **Description:** Get a single todo by ID
+- **Controller:** `singleTodoController`
 
-### Analyzing the Bundle Size
+### Add Todo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **URL:** `/todoadd`
+- **Method:** `POST`
+- **Description:** Add a new todo
+- **Controller:** `todoAddController`
 
-### Making a Progressive Web App
+### Update Todo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **URL:** `/todoupdate/:id`
+- **Method:** `PUT`
+- **Description:** Update a todo by ID
+- **Controller:** `todoUpdateController`
 
-### Advanced Configuration
+### Delete Todo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **URL:** `/tododelete/:id`
+- **Method:** `DELETE`
+- **Description:** Delete a todo by ID
+- **Controller:** `todoDeleteController`
 
-### Deployment
+### Delete Multiple Todos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **URL:** `/tododeleteMany`
+- **Method:** `DELETE`
+- **Description:** Delete multiple todos
+- **Controller:** `todoDeleteManyController`
 
-### `npm run build` fails to minify
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Frontend:** React.js, HTML, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Other:** Context Api, Axios, Material-Ui , bootstrap
+
+## Live
+
+    The live version of this project can be accessed [here] https://wit-arist-frontend.vercel.app/
+
+# Project View
+
+![Project View](https://res.cloudinary.com/dh9qvkjr1/image/upload/v1711772100/jjntvpx3ecmqyjqsgnrf.png)
